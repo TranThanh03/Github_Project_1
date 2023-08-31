@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="jpg" href="./picture/logo.jpg">
+    <link rel="preload" href="./images" as="image">
+    <link rel="icon" href="./images/logo.svg" type="image/svg+xml">
     <script src="https://kit.fontawesome.com/55248680cf.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
     <title>Login</title>
@@ -26,12 +27,12 @@
             <div class="title"><h2>Login</h2></div>
             <form action="./ktsnt.html" class="login-form" method="get" enctype="multipart/form-data" autocomplete="off" novalidate>
                 <div class="user">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope fa-bounce"></i>
                     <input type="text" class="username" autocomplete="off" required>
                     <label for="username">Username</label>
                 </div>
                 <div class="pass">
-                    <div id="toggle-button"> <i class="fa-solid fa-lock"></i></div>
+                    <div id="toggle-button"> <i class="fa-solid fa-lock fa-bounce"></i></div>
                     <input type="password" class="password" autocomplete="off" required>
                     <label for="password">Password</label>
                 </div>
