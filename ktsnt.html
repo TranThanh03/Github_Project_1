@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/snt.js"></script>
+    <style>
+        .font{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width:300px;
+            height: 250px;
+            padding: 30px;
+            text-align: center;
+            border: 2px solid #000;
+        }
+        .font #input, #output{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .font #output {
+            min-width: 50px;
+            max-width: 300px; 
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="font">
+            <p>Tìm số nguyên tố</p>
+            <p><input type="text" id="input" placeholder="Nhập" autocapitalize="off"></p>
+            <p><input type="text" id="output" placeholder="Kết quả" readonly></p>
+            <p><input type="button" value="Test" onclick="check()">
+            <input type="reset" value="Reset" onclick="xoa()"></p>
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="jpg" href="./picture/logo.jpg">
+    <script src="https://kit.fontawesome.com/55248680cf.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="login-container">
+        <div class="content">
+            <h2>Welcome</h2>
+            <h3>Website of ThanhF</h3>
+            <i class="content-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </i>
+        </div>
+        <div class="account">
+            <div class="title"><h2>Login</h2></div>
+            <form action="./ktsnt.html" class="login-form" method="get" enctype="multipart/form-data" autocomplete="off" novalidate>
+                <div class="user">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" class="username" autocomplete="off" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="pass">
+                    <div id="toggle-button"> <i class="fa-solid fa-lock"></i></div>
+                    <input type="password" class="password" autocomplete="off" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="error-notify">
+                    <p id="error">Incorrect username or password!</p>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div>
+                    <input type="submit" class="button" value="Login">
+                </div>
+                <div class="create-acc">
+                    <p>Don't have an account?</p>
+                    <a href="#">Create in here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
