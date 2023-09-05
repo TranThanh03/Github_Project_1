@@ -37,7 +37,7 @@ body {
     background: url('./images/background.jpg') no-repeat center;
     background-size: cover;
 }
-
+ 
 .login-container .content {
     float: left;
     width: 45%;
@@ -83,7 +83,6 @@ body {
     top: 33%;
     left: 52%;
     pointer-events: none;
-    font-weight: normal;
     font-size: 18px;
 }
 

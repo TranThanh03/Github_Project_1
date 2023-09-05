@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const passwordInput = document.querySelector(".password");
     const errorMessage = document.getElementById("error");
     const toggleButton = document.getElementById("toggle-button");
+    const labelElement = document.querySelector('label[for="username"]');
 
     loginForm.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -12,17 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
         const dataPassword = passwordInput.value;
         if(dataUsername === "") {
             usernameInput.style.borderBottom = "2px solid red";
+            labelElement.style.color = "red";
         }
         else{
-            usernameInput.style.borderBottom = "2px solid black";
-            if(dataUsername === 'thanh2k3' && dataPassword === '22102003') {
+            usernameInput.style.borderBottom = "";
+            labelElement.style.color = "";
+            if(dataUsername === 'admin@gmail.com' && dataPassword === '123') {
                 loginForm.submit();
             }
             else{
                 errorMessage.style.display = "block";
                 setTimeout(function() {
                     errorMessage.style.display = "none";
-                }, 1200);
+                }, 1500);
             }
         }
     });
@@ -40,4 +43,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-//Welcom
